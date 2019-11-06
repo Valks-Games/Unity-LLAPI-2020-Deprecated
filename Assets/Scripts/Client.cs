@@ -16,11 +16,10 @@ namespace TransportLayerTest
 
         void Start()
         {
-            configure();
+            ConfigureClient();
         }
 
-        //Configures client to connect to a server
-        void configure()
+        void ConfigureClient()
         {
             //Creates a network driver that can track up to 32 packets at a time (32 is the limit)
             networkDriver = new UdpNetworkDriver(new ReliableUtility.Parameters { WindowSize = 32 });
