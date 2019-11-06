@@ -8,7 +8,7 @@ using Unity.Networking.Transport.Utilities;
 
 namespace TransportLayerTest
 {
-    public class ServerBehaviour : MonoBehaviour
+    public class Server : MonoBehaviour
     {
         public UdpNetworkDriver networkDriver;
         private NativeList<NetworkConnection> networkConnections; //Holds a list of active network connections
